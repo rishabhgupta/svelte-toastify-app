@@ -34,6 +34,6 @@
     "sapper": "^0.28.0",
     "svelte": "^3.17.3",
     "svelte-tabs": "^1.1.0",
-    "svelte-toastify": "0.0.26"
+    "svelte-toastify": "0.0.27"
   }
 }
