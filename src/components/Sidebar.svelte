@@ -25,6 +25,9 @@
             <a rel="prefetch" href="usages/customid">Use Custom ID</a>
         </li>
         <li>
+            <a rel="prefetch" href="usages/duplicates">Prevent Duplicates</a>
+        </li>
+        <li>
             <a rel="prefetch" href="usages/close">
                 Use custom Close button or remove it
             </a>
