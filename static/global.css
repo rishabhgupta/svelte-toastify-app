@@ -29,6 +29,15 @@ button {
     border-radius: 3px;
 }
 
+.secondary {
+	background-color: #666;
+	color: white;
+}
+
+.secondary:hover {
+	border: 1px solid #666;
+}
+
 button:hover {
 	background-color: white;
 	color: #313d47;
@@ -42,7 +51,7 @@ button:active {
 .code {
 	overflow: auto;
     padding: 1.5rem 2rem;
-    margin: .8rem 0 2.4rem;
+    /* margin: .8rem 0 2.4rem; */
 	/* max-width: var(--code-w); */
 	background-color: aliceblue;
 	border-radius: var(--border-r);
@@ -63,20 +72,20 @@ button:active {
 	}
 }
 
-.page {
+.usages-page {
 	display: flex;
 }
-.page__container {
+.usages-page__container {
 	flex: 1;
 	margin: 0 auto;
 	padding: 15px 15px;
 	border-bottom: 1px solid #eee;
 }
 
-.nav__container {
+.usages-nav__container {
 	flex: 0 1 270px;
 }
-.content {
+.usages-content {
 	max-width: 1200px;
 	margin: 0 auto;
 	text-align: left;
