@@ -1,31 +1,36 @@
 <script>
-	import Nav from '../components/Nav.svelte';
-	
-	export let segment;
+    import Nav from "../components/Nav.svelte";
+    import { toast } from "svelte-toastify";
 
-	import { onMount } from 'svelte';
-	
-	let ToastComponent;
+    export let segment;
 
-	onMount(async () => {
-		const module = await import('svelte-toastify');
-		ToastComponent = module.ToastContainer;
-	});
+    import { onMount } from "svelte";
+
+    let ToastComponent;
+
+    toast.configure({
+        position: "bottom-right",
+    });
+
+    onMount(async () => {
+        const module = await import("svelte-toastify");
+        ToastComponent = module.ToastContainer;
+    });
 </script>
 
 <style>
-	main {
-		position: relative;
-		max-width: 100%;
-		background-color: white;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
+    main {
+        position: relative;
+        max-width: 100%;
+        background-color: white;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
 </style>
 
-<Nav {segment}/>
+<Nav {segment} />
 
 <main>
-	<slot></slot>
+    <slot />
 </main>
-<svelte:component this={ToastComponent}/>
+<svelte:component this={ToastComponent} />
