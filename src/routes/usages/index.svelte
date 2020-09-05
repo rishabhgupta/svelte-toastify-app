@@ -5,9 +5,9 @@
 <svelte:head>
     <title>Usages</title>
 </svelte:head>
-<div class="page">
+<div class="usages-page">
     <Sidebar />
-    <section class="page__container">
-        <div class="content">PAGE CONTENT</div>
+    <section class="usages-page__container">
+        <div class="usages-content">PAGE CONTENT</div>
     </section>
 </div>

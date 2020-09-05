@@ -5,10 +5,10 @@
 <svelte:head>
     <title>Custom Toast</title>
 </svelte:head>
-<div class="page">
+<div class="usages-page">
     <Sidebar />
-    <section class="page__container">
-        <div class="content">
+    <section class="usages-page__container">
+        <div class="usages-content">
             <h1>Custom Toast</h1>
         </div>
     </section>
